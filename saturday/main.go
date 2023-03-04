@@ -10,6 +10,8 @@ import (
 var pl = fmt.Println
 var pf = fmt.Printf
 
+type
+
 func main() {
 	as := "lksdnf"
 	pl(reflect.TypeOf(12))
@@ -34,32 +36,30 @@ func main() {
 	pf("%v\n", rs)
 
 	const (
-		SUN = 7 - iota
+		SUN = 6 - iota
 		SAT
 		FRI
 		THU
 		WED
 		TUE
 		MON
-		NULL
 	)
 
 	wl := [...]string{
-		TUE:  "Its Tuesday!",
-		FRI:  "Finally Friday cometh",
-		SUN:  "Yippe Kaye Its Holiday",
-		MON:  "Let the Grind Commence",
-		THU:  "Getting closer patience pal",
-		SAT:  "Neflix and chill",
-		WED:  "Stuck in the middle",
-		NULL: "Jonesing for a eight day week HA!",
+		TUE: "Its Tuesday!",
+		FRI: "Finally Friday cometh",
+		SUN: "Yippe Kaye Its Holiday",
+		MON: "Let the Grind Commence",
+		THU: "Getting closer patience pal",
+		SAT: "Neflix and chill",
+		WED: "Stuck in the middle",
 	}
 	pf("%v\n", wl)
 	for i, v := range wl {
-		pf("Index\t%d\t\t%s\n", i, v)
+		pf("Index:-\t%d\t\t%s\n", i, v)
 	}
 
-	pf("%v\n", wl[NULL])
+	pf("%v\n", wl[SUN])
 	pf("%v\n", wl[WED])
 	pf("%v\n", wl[MON])
 
