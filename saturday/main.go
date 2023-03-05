@@ -10,7 +10,11 @@ import (
 var pl = fmt.Println
 var pf = fmt.Printf
 
-type
+type (
+	integer  int
+	bookcase [5]int
+	cabinet  [5]int
+)
 
 func main() {
 	as := "lksdnf"
@@ -58,9 +62,17 @@ func main() {
 	for i, v := range wl {
 		pf("Index:-\t%d\t\t%s\n", i, v)
 	}
-
+	aws := [...]int{1, 2, 3, 4, 5}
 	pf("%v\n", wl[SUN])
 	pf("%v\n", wl[WED])
 	pf("%v\n", wl[MON])
+	blue := bookcase{1, 2, 3, 4, 5}
+	red := cabinet{1, 2, 3, 4, 5}
 
+	pf("%v\n", blue)
+	pf("%#v\n", blue)
+	pf("%v\n", red)
+	pf("%#v\n", aws)
+	pf("%v\n", aws)
+	pf("%t\n", blue == bookcase(red))
 }
