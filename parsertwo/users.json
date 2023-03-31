@@ -1,0 +1,18 @@
+[
+	{
+		"userName": "osaid"
+	},
+	{
+		"userName": "god",
+		"perm": {
+			"admin": true
+		}
+	},
+	{
+		"userName": "devil",
+		"perm": {
+			"admin": false,
+			"user_access": true
+		}
+	}
+]
